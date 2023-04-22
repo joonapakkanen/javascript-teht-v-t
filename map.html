@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <script defer src="scripts/map.js"></script>
+    <link type="text/css" href="styles/map.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Sijainti kartalla</h1>
+
+    </div>
+    <div>
+        <iframe id="MyFrame" width="600" height="300" frameborder="200"
+            src="https://www.google.com/maps?q=Yliopistonkatu 36 Lappeenranta&output=embed">
+        </iframe>
+    </div>
+    <div>
+        <label for="name">Katuosoite:</label>
+    </div>
+    <div>
+        <input type="text" id="addr-field" name="name" required minlength="1" maxlength=20" size="20">
+    </div>
+    <div>
+        <label for="name">Kaupunki:</label>
+    </div>
+    <div>
+        <input type="text" id="city-field" name="name" required minlength="1" maxlength="20" size="20">
+    </div>
+    <div>
+        <button onclick="myFunction()">Hae</button>
+
+    </div>
+</body>
+
+</html>
